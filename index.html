@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>河蚌与珍珠 · Three.js 动画</title>
+  <style>
+    :root { color-scheme: light; font-family: ui-rounded, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #f7f0db; color: #4c321d; display: grid; place-items: center; }
+    .app { width: min(100vw, 1120px); padding: 20px; }
+    h1 { margin: 0 0 12px; text-align: center; font-size: clamp(18px, 3vw, 26px); font-weight: 700; letter-spacing: .08em; }
+    #stage { width: 100%; aspect-ratio: 16 / 9; border: 2px solid #bca782; border-radius: 18px; overflow: hidden; box-shadow: 0 18px 42px #6e543326; background: #f8f2df; }
+    canvas { display: block; width: 100%; height: 100%; }
+    .controls { display: flex; align-items: center; gap: 14px; margin-top: 16px; }
+    button { border: 2px solid #75512e; background: #fff5d9; color: #4c321d; border-radius: 999px; padding: 9px 18px; font: inherit; font-weight: 700; cursor: pointer; white-space: nowrap; }
+    button:hover { background: #f6dfab; }
+    input[type=range] { flex: 1; accent-color: #8c5929; cursor: pointer; }
+    .hint { text-align: center; font-size: 13px; opacity: .75; margin: 12px 0 0; }
+    .downloads { display:flex; justify-content:center; flex-wrap:wrap; gap:10px 20px; margin:18px 0 0; font-size:14px; }
+    .downloads a { color:#704928; text-decoration:underline; text-underline-offset:3px; }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <h1>河蚌与珍珠</h1>
+    <div id="stage" aria-label="河蚌被小刀轻敲后像翻书一样打开，露出珍珠"></div>
+    <div class="controls">
+      <button id="toggle" type="button">暂停</button>
+      <button id="restart" type="button">重播</button>
+      <input id="timeline" type="range" min="0" max="6" step="0.01" value="0" aria-label="动画进度">
+      <span id="time">0.0 / 6.0 秒</span>
+    </div>
+    <p class="hint">Three.js 实时绘制 · 可暂停、拖动进度条、重播</p>
+    <nav class="downloads" aria-label="其他作品">
+      <a href="./assets/深色线条合并插画.png">合并插画</a>
+      <a href="./assets/河蚌与珍珠_动画.mp4">初版视频</a>
+      <a href="./assets/河蚌与珍珠_动画改版.mp4">修改版视频</a>
+      <a href="https://github.com/cassieliang6709/clam-pearl-knife-animation">查看源码</a>
+    </nav>
+  </main>
+  <script src="./bundle.js"></script>
+</body>
+</html>
