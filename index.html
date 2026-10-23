@@ -19,6 +19,15 @@
     .hint { text-align: center; font-size: 13px; opacity: .75; margin: 12px 0 0; }
     .downloads { display:flex; justify-content:center; flex-wrap:wrap; gap:10px 20px; margin:18px 0 0; font-size:14px; }
     .downloads a { color:#704928; text-decoration:underline; text-underline-offset:3px; }
+    .birthday { margin:34px auto 8px; max-width:930px; }
+    .birthday h2 { text-align:center; font-size:22px; margin:0 0 8px; }
+    .birthday > p { text-align:center; margin:0 0 18px; font-size:14px; }
+    .birthday-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+    .birthday-card { display:block; color:inherit; text-decoration:none; padding:12px; border:2px solid #bca782; border-radius:14px; background:#fff9eb; }
+    .birthday-card:hover { transform:translateY(-2px); box-shadow:0 8px 20px #6e543326; }
+    .birthday-card img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px; background:#f0e3cf; }
+    .birthday-card strong { display:block; margin:9px 2px 2px; }
+    .birthday-card span { display:block; font-size:13px; margin:0 2px 3px; opacity:.78; }
   </style>
 </head>
 <body>
@@ -38,6 +47,15 @@
       <a href="./assets/河蚌与珍珠_动画改版.mp4">修改版视频</a>
       <a href="https://github.com/cassieliang6709/clam-pearl-knife-animation">查看源码</a>
     </nav>
+    <section class="birthday" aria-labelledby="birthday-title">
+      <h2 id="birthday-title">生日贺卡与手绘</h2>
+      <p>另外两套生日网页，以及十种手绘风格探索。</p>
+      <div class="birthday-grid">
+        <a class="birthday-card" href="./birthday/vintage-card/index.html"><img src="./birthday/style-gallery/10-复古贺卡.png" alt="复古手绘生日贺卡预览"><strong>复古手绘生日贺卡</strong><span>故事、日程与祝福的完整网页</span></a>
+        <a class="birthday-card" href="./birthday/sketch-card/index.html"><img src="./birthday/河蚌珍珠插画.png" alt="河蚌与珍珠插画预览"><strong>Sketch 风格生日网页</strong><span>另一版生日邀请设计</span></a>
+        <a class="birthday-card" href="./birthday/style-gallery/index.html"><img src="./birthday/style-gallery/01-奶油蜡笔.png" alt="手绘风格预览"><strong>十种手绘风格</strong><span>可浏览和比较的插画方案</span></a>
+      </div>
+    </section>
   </main>
   <script src="./bundle.js"></script>
 </body>

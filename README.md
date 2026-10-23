@@ -13,6 +13,15 @@
 - [修改版短视频](assets/河蚌与珍珠_动画改版.mp4)
 - [Three.js 页面](index.html) 与 [主代码](main.js)
 
+## 生日贺卡
+
+- [复古手绘生日贺卡](birthday/vintage-card/index.html)
+- [Sketch 风格生日网页](birthday/sketch-card/index.html)
+- [十种手绘风格方案](birthday/style-gallery/index.html)
+- [河蚌珍珠插画](birthday/河蚌珍珠插画.png)
+
+这两版生日网页是设计展示。祝福表单只保存在访问者自己的浏览器，不会发送给 Nini；公开版已移除演示管理入口。
+
 ## 本地运行
 
 下载仓库后直接用浏览器打开 `index.html`，无需联网或安装依赖。`bundle.js` 是可直接运行的打包文件；`main.js` 是便于阅读和修改的源代码。
